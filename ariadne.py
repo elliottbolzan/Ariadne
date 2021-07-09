@@ -51,4 +51,4 @@ for volume_index in range(1, volume_count + 1):
     volume_path = volumes_path + str(volume_index) + ".pdf"
     first_image = images[0]
     first_image.save(volume_path, "PDF", resolution=100.0,
-                     save_all=True, append_images=images)
+                     save_all=True, append_images=images[1:])
